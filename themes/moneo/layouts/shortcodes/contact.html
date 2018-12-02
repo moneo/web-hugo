@@ -1,0 +1,66 @@
+{{ define "page-header" }}
+<header class="solid">
+    <section class="container">
+      <a class="logo" href="index.html">
+        <img src="assets/image/logo.png" alt="moneo" class="blue">
+        <img src="assets/image/logo-white.png" alt="moneo" class="white">
+      </a>
+      <nav>
+        <i class="nav-button"><span></span></i>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li class="has-submenu">
+            <a href="what-we-do.html" title="What We Do">What We Do</a>
+            <nav>
+              <a href="index.html" title="Lorem">Lorem Ipsum</a>
+              <a href="index.html" title="Dolor">Dolor Sit</a>
+              <a href="index.html" title="Amet">Amet Consectetur</a>
+            </nav>
+          </li>
+          <li class="has-submenu">
+            <a href="about-us.html" title="About Us">About Us</a>
+            <nav>
+              <a href="our-expertise.html" title="Our Expertise">Our Expertise</a>
+            </nav>
+          </li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+{{ end }}
+<section class="content contact-form">
+        <section class="container">
+          <section class="left-side">
+            <img src="/image/contact-slogan.jpg" alt="Got a project?">
+          </section>
+          <form action="" method="post">
+            <input type="text" name="fullname" placeholder="name, surname">
+            <input type="email" name="email" placeholder="e-mail address">
+            <input type="tel" name="phone" placeholder="phone number">
+            <textarea name="message" rows="10" placeholder="Say It"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </section>
+
+
+<section class="content background-gray">
+  <article class="container">
+    <h1>Looking For a Job?</h1>
+    <h4 class="subtitle">Join our team, here is the open positions</h4>
+
+    <ul class="job-list">
+        {{ range where (where .Site.Pages "Section" "jobs") ".Params.location" "!=" nil }}
+      <li>
+        <p class="location">{{ .Params.location }}</p>
+        <h2>{{ .Title }}</h2>
+        <p class="description">
+          {{ .Description }}
+        </p>
+        <a href="{{ .URL }}" class="btn btn-blue">Apply</a>
+      </li>
+      {{ end }}
+    </ul>
+  </article>
+</section>
