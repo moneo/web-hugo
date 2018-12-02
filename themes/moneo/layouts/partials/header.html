@@ -4,22 +4,6 @@
       <img src="/image/logo.png" alt="moneo" class="blue">
       <img src="/image/logo-white.png" alt="moneo" class="white">
     </a>
-    <nav>
-      <i class="nav-button"><span></span></i>
-      <ul>
-        <li><a href="{{- printf "/" | absURL -}}" title="Home">Home</a></li>
-        <li class="has-submenu">
-          <a href="what-we-do.html" title="What We Do">What We Do</a>
-          {{ partial "navmenu.html" . }}
-        </li>
-        <li class="has-submenu">
-          <a href="about-us.html" title="About Us">About Us</a>
-          <nav>
-            <a href="our-expertise.html" title="Our Expertise">Our Expertise</a>
-          </nav>
-        </li>
-        <li><a href="contact.html" title="Contact">Contact</a></li>
-      </ul>
-    </nav>
+    {{ partial "navmenu.html" . }}
   </section>
 </header>
