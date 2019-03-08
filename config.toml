@@ -1,5 +1,4 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Moneo"
-theme = "moneo"
-facebook = "https://fb.com/moneo"
+theme = "moneo-web"
