@@ -8,48 +8,15 @@
             </nav>
         </section>
         <ul class="event-list owl-carousel">
+            {{ range last 2 (where .Site.Pages "Params.type" "event") }}
             <li>
-                <a href="index.html">
-                    <p class="date">12 <span>Apr</span></p>
-                    <p class="title">Portfolio Review</p>
-                    <p class="location">at Workinton Istanbul</p>
+                <a href="{{- .URL | absURL -}}">
+                    <p class="date">{{ dateFormat "2" .Params.Event_date}}<span>{{ dateFormat "Jan" .Params.Event_date}}</span></p>
+                    <p class="title">{{- .Title -}}</p>
+                    <p class="location">at&nbsp;{{- .Params.Location -}}</p>
                 </a>
             </li>
-            <li>
-                <a href="index.html">
-                    <p class="date">4 <span>May</span></p>
-                    <p class="title">PHPKonf'19 Istanbul</p>
-                    <p class="location">at Sheraton Istanbul Bosphorus</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="date">26 <span>May</span></p>
-                    <p class="title">Intern Bootcamp</p>
-                    <p class="location">at Moneo Istanbul</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="date">12 <span>Apr</span></p>
-                    <p class="title">Portfolio Review</p>
-                    <p class="location">at Workinton Istanbul</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="date">4 <span>May</span></p>
-                    <p class="title">PHPKonf'19 Istanbul</p>
-                    <p class="location">at Sheraton Istanbul Bosphorus</p>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <p class="date">26 <span>May</span></p>
-                    <p class="title">Intern Bootcamp</p>
-                    <p class="location">at Moneo Istanbul</p>
-                </a>
-            </li>
+            {{ end }}
         </ul>
     </section>
 
@@ -74,11 +41,11 @@
             <section>
                 <h1>Follow us on</h1>
                 <nav class="social">
-                    <a href="https://www.facebook.com/itsmoneo" target="_blank">Fb</a>
-                    <a href="https://twitter.com/itsmoneo" target="_blank">Tw</a>
-                    <a href="https://www.instagram.com/moneo_official/" target="_blank">Ig</a>
-                    <a href="https://www.linkedin.com/company/itsmoneo" target="_blank">In</a>
-                    <a href="https://youtube.com" target="_blank">Yt</a>
+                    <a href="{{ .Site.Params.Facebook }}" target="_blank">Fb</a>
+                    <a href="{{ .Site.Params.Twitter }}" target="_blank">Tw</a>
+                    <a href="{{ .Site.Params.Instagram }}" target="_blank">Ig</a>
+                    <a href="{{ .Site.Params.Linkedin }}" target="_blank">In</a>
+                    <a href="{{ .Site.Params.Youtube }}" target="_blank">Yt</a>
                 </nav>
             </section>
         </section>

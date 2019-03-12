@@ -1,0 +1,31 @@
+<section class="blog-top container-root">
+    <div class="row p-0">
+        <nav class="col-lg-8">
+            <a href="javascript:;">All</a>
+            {{ range $taxonomyName, $taxonomy := .Site.Taxonomies.categories }}
+            <a href="/blog/{{ $taxonomyName | urlize }}">{{ humanize $taxonomyName }}</a>
+            {{ end }}
+        </nav>
+        <div class="search col-lg-4 col-sm-6">
+            <input type="text" name="q" class="search-input" placeholder="Looking for something?">
+            <button type="submit"></button>
+        </div>
+    </div>
+</section>
+
+<div class="hero solid auto-height">
+    <section class="blog-list container">
+        <div class="row">
+            {{ range last 1 (where .Site.Pages "Params.featured" "primary") }}
+            <div class="col-md-4">
+                <a href="{{- .URL | absURL -}}" title="" class="blog-post">
+                    <div class="blog-image" style="background-image: url('{{- .Params.Thumbnail -}}'); background-size:cover;">
+                    </div>
+                    <p class="title">{{- .Title -}}</p>
+                    <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>

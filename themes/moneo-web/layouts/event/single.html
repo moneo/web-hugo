@@ -1,0 +1,105 @@
+{{ define "main" }}
+<section class="blog-top blog-breadcrumbs">
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Events</a></li>
+            {{ range $key, $category := .Params.categories }}
+            <li><a href="{{ "/" | absURL }}events/{{ $category | urlize }}/">{{ humanize $category }}</a></li>
+            {{ end }}
+            <li><a href="{{- .URL | absURL -}}">{{ .LinkTitle }}</a></li>
+        </ul>
+    </nav>
+</section>
+
+<article class="blog-post">
+    <h1>{{- .Title -}}</h1>
+
+    <div class="info">
+        <p class="meta d-flex">{{- .ReadingTime -}}&nbsp;min to read <span class="author">hosted by <strong>{{ .Params.Host }}</strong></span></p>
+        <div class="share">
+            <span>Share via</span>
+            <nav class="share">
+                <ul>
+                    <li><a href="javascript:;">Fb</a></li>
+                    <li><a href="javascript:;">Tw</a></li>
+                    <li><a href="javascript:;">In</a></li>
+                    <li><a href="javascript:;">Mail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <img src="assets/image/blog/hero.jpg" class="hero" alt="">
+    {{- .Content -}}
+</article>
+
+<section class="blog-post-bottom hero solid auto-height">
+    <section class="blog-list container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="blog-detail.html" title="" class="blog-post">
+                    <div class="blog-image" style="background-image: url('https://picsum.photos/270/270/?random=31'); background-size:cover;">
+                    </div>
+                    <p class="title">What 2 Years of Android Development Have Taught Me the Hard Way</p>
+                    <p class="meta">2 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="blog-detail.html" title="" class="blog-post">
+                    <div class="blog-image" style="background-image: url('https://picsum.photos/270/270/?random=32'); background-size:cover;">
+                    </div>
+                    <p class="title">What 2 Years of Android Development Have Taught Me the Hard Way</p>
+                    <p class="meta">2 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="blog-detail.html" title="" class="blog-post">
+                    <div class="blog-image" style="background-image: url('https://picsum.photos/270/270/?random=30'); background-size:cover;">
+                    </div>
+                    <p class="title">What 2 Years of Android Development Have Taught Me the Hard Way</p>
+                    <p class="meta">2 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="comments">
+        <h1>Comments</h1>
+        <div class="list">
+            <article>
+                <h4>Hakan Güven</h4>
+                <p>Nullam eleifend quam semper placerat condimentum. Sed efficitur neque quis nunc ornare lacinia.
+                    Maecenas pharetra, sapien quis maximus ultricies</p>
+                <p class="meta">Jan 12, 2018 - Wed</p>
+            </article>
+            <article>
+                <h4>Hakan Güven</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloremque itaque laborum laudantium
+                    necessitatibus, ratione tempore veniam voluptatum! Ab, atque consequatur dignissimos et hic illum
+                    iusto maiores quam rem veniam.</p>
+                <p class="meta">Jan 12, 2018 - Wed</p>
+            </article>
+            <article>
+                <h4>Hakan Güven</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nulla, quas! Amet eius harum possimus.
+                    Ab amet at commodi fuga, modi placeat sed voluptas voluptatem. Itaque mollitia obcaecati ratione sint.</p>
+                <p class="meta">Jan 12, 2018 - Wed</p>
+            </article>
+        </div>
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="E-Mail">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="6" placeholder="Your comment"></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </form>
+    </section>
+</section>
+{{ end }}

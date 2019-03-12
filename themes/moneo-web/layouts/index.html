@@ -65,23 +65,23 @@
     <section class="nav-container">
         <nav>
             <section class="featured">
-                <a href="blog-detail.html">
-                    <p class="title">Unit Testing for Web Software: Why It’s Necessary and Which Frameworks to Use</p>
-                    <p class="meta">2 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
-                </a>
+                {{ range last 1 (where .Pages "Params.featured" "primary") }}
+                    <a href="{{- .URL | absURL -}}">
+                        <p class="title">{{- .Title -}}</p>
+                        <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
+                    </a>
+                {{ end }}
             </section>
             <section class="secondary">
-                <a href="blog-detail.html">
-                    <p class="title">Cloud Solutions for Web App Development: How and Which One to Choose?</p>
-                    <p class="meta">3 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
+                {{ range last 2 (where .Pages "Params.featured" "secondary") }}
+                <a href="{{- .URL | absURL -}}">
+                    <p class="title">{{- .Title -}}</p>
+                    <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
                 </a>
-                <a href="blog-detail.html">
-                    <p class="title">Why Building Your Own Property Management System for Hotels Is a Good Idea</p>
-                    <p class="meta">8 min to read <span class="author">by <strong>Emir Karşıyakalı</strong></span></p>
-                </a>
+                {{ end }}
             </section>
         </nav>
-        <a href="blog.html" class="read-more">Read more articles on our blog <i class="icon-caret"></i></a>
+        <a href="{{ .Site.BaseURL }}blog/" class="read-more">Read more articles on our blog <i class="icon-caret"></i></a>
     </section>
 </section>
 {{ end }}

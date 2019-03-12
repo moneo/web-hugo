@@ -2,3 +2,13 @@ baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Moneo"
 theme = "moneo-web"
+facebook = "https://facebook.com/itsmoneo"
+twitter = "https://twitter.com/itsmoneo"
+instagram = "https://instagram.com/moneo_official"
+linkedin = "https://linkedin.com/company/itsmoneo"
+youtube = "https://youtube.com"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
