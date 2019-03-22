@@ -9,10 +9,7 @@
                 {{ end }}
             {{ end }}
         </nav>
-        <div class="search col-lg-4 col-sm-6">
-            <input type="text" name="q" class="search-input" placeholder="Looking for something?">
-            <button type="submit"></button>
-        </div>
+        {{- partial "search.html" . -}}
     </div>
 </section>
 
@@ -31,7 +28,7 @@
             </div>
             {{ end }}
         </div>
-            
+
     {{ if eq true .Paginator.HasPrev }}
         <a href="{{ .Paginator.Prev.URL | absURL }}" style="float:left">Prev Page</a>
     {{ end }}

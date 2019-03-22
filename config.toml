@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://localhost:1313/"
 languageCode = "en-us"
 title = "Moneo"
 theme = "moneo-web"
@@ -14,3 +14,16 @@ paginate = 1
 category = "categories"
 tag = "tags"
 search = "search"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "date", "permalink", "author", "thumbnail"]
+params = ["categories", "tags"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Insights on Moneo</title>
+    <link>http://localhost:1313/categories/insights/</link>
+    <description>Recent content in Insights on Moneo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Dec 2018 01:24:48 +0300</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/insights/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Smart Bundling: How To Serve Legacy Code Only To Legacy Browsers</title>
+      <link>http://localhost:1313/blog/ilk-blog-yazisi/</link>
+      <pubDate>Sun, 02 Dec 2018 01:24:48 +0300</pubDate>
+      
+      <guid>http://localhost:1313/blog/ilk-blog-yazisi/</guid>
+      <description>While effective bundling of resources on the web has received a great deal of mindshare in recent times, how we ship front-end resources to our users has remained pretty much the same. The average weight of JavaScript and style resources that a website ships with is rising — even though build tooling to optimize the website has never been better. With the marketshare of evergreen browsers rising fast and browsers launching support for new features in lockstep, is it time we rethink asset delivery for the modern web?</description>
+    </item>
+    
+  </channel>
+</rss>

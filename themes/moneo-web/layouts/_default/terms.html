@@ -3,18 +3,15 @@
         <div class="row p-0">
             <nav class="col-lg-8">
                 <a href="{{ "/blog/" | absURL }}">All</a>
-                
+
                 {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
                 <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
                 {{ end }}
             </nav>
-            <div class="search col-lg-4 col-sm-6">
-                <input type="text" name="q" class="search-input" placeholder="Looking for something?">
-                <button type="submit"></button>
-            </div>
+            {{- partial "search.html" . -}}
         </div>
     </section>
-    
+
 <div class="hero solid auto-height">
     <section class="blog-list container">
         <div class="row">

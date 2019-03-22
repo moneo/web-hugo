@@ -9,45 +9,20 @@
                 {{ end }}
             {{ end }}
         </nav>
-        <div class="search col-lg-4 col-sm-6">
-            <input type="text" name="q" class="search-input" placeholder="Looking for something?">
-            <button type="submit"></button>
-        </div>
+        {{- partial "search.html" . -}}
     </div>
 </section>
 
 <div class="hero solid auto-height">
     <section class="blog-list container">
-        <div class="row">
-            {{ . }}
-            {{ range where .Site.Pages ".Params.Title" "in" "blog" }}
-            <div class="col-md-4">
-                <a href="{{- .URL | absURL -}}" title="" class="blog-post">
-                    <div class="blog-image" style="background-image: url('{{- .Params.Thumbnail -}}'); background-size:cover;">
-                    </div>
-                    <p class="title">{{- .Title -}}</p>
-                    <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
-                </a>
-            </div>
-            {{ end }}
+        <div class="row algolia-search-list">
+
         </div>
+
+        <a class="prev-page" href="" style="float:left; display:none;">Prev Page</a>
+
+        <a class="next-page" href="" style="float:right; display:none;">Next Page</a>
     </section>
-    <!--
-    {{ .Paginator }}
-    {{ .Paginator.PageNumber }}
-    {{ .Paginator.URL }}
-    {{ .Paginator.Pages }}
-    {{ .Paginator.NumberOfElements }}
-    {{ .Paginator.HasPrev }}
-    {{ .Paginator.Prev }}
-    {{ .Paginator.HasNext }}
-    {{ .Paginator.Next }}
-    {{ .Paginator.First }}
-    {{ .Paginator.Last }}
-    {{ .Paginator.Pagers }}
-    {{ .Paginator.PageSize }}
-    {{ .Paginator.TotalPages }}
-    {{ .Paginator.TotalNumberOfElements }}
-    -->
 </div>
+<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
 {{ end }}
