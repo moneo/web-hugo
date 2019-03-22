@@ -1,9 +1,12 @@
+{{ define "main" }}
 <section class="blog-top container-root">
     <div class="row p-0">
         <nav class="col-lg-8">
-            <a href="javascript:;">All</a>
-            {{ range ($.Site.GetPage "taxonomyTerm" "erdem").Pages }}
-            <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
+                {{ if or (eq .Section "blog") (eq .Section "categories") }}
+                <a href="{{ "/blog/" | absURL }}">All</a>
+                {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                    <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
+                {{ end }}
             {{ end }}
         </nav>
         <div class="search col-lg-4 col-sm-6">
@@ -16,7 +19,8 @@
 <div class="hero solid auto-height">
     <section class="blog-list container">
         <div class="row">
-            {{ range last 1 (where .Site.Pages "Params.type" "blog") }}
+            {{ . }}
+            {{ range where .Site.Pages ".Params.Title" "in" "blog" }}
             <div class="col-md-4">
                 <a href="{{- .URL | absURL -}}" title="" class="blog-post">
                     <div class="blog-image" style="background-image: url('{{- .Params.Thumbnail -}}'); background-size:cover;">
@@ -28,4 +32,22 @@
             {{ end }}
         </div>
     </section>
+    <!--
+    {{ .Paginator }}
+    {{ .Paginator.PageNumber }}
+    {{ .Paginator.URL }}
+    {{ .Paginator.Pages }}
+    {{ .Paginator.NumberOfElements }}
+    {{ .Paginator.HasPrev }}
+    {{ .Paginator.Prev }}
+    {{ .Paginator.HasNext }}
+    {{ .Paginator.Next }}
+    {{ .Paginator.First }}
+    {{ .Paginator.Last }}
+    {{ .Paginator.Pagers }}
+    {{ .Paginator.PageSize }}
+    {{ .Paginator.TotalPages }}
+    {{ .Paginator.TotalNumberOfElements }}
+    -->
 </div>
+{{ end }}

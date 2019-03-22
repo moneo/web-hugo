@@ -2,10 +2,10 @@
 <section class="blog-top blog-breadcrumbs">
     <nav class="breadcrumb">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="{{ "/" | absURL }}">Home</a></li>
+            <li><a href="{{ "/blog/" | absURL }}">Blog</a></li>
             {{ range $key, $category := .Params.categories }}
-            <li><a href="{{ "/" | absURL }}blog/{{ $category | urlize }}/">{{ $category }}</a></li>
+            <li><a href="{{ "/categories/" | absURL }}{{ $category | urlize }}/">{{ $category }}</a></li>
             {{ end }}
         </ul>
     </nav>

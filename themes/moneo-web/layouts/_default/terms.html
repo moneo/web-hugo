@@ -1,9 +1,34 @@
 {{ define "main" }}
-
-{{ .Content }}
-termstermstermstermsterms
-termstermstermstermsterms
-termstermstermstermstermsterms
-termstermstermsterms
+<section class="blog-top container-root">
+        <div class="row p-0">
+            <nav class="col-lg-8">
+                <a href="{{ "/blog/" | absURL }}">All</a>
+                
+                {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
+                {{ end }}
+            </nav>
+            <div class="search col-lg-4 col-sm-6">
+                <input type="text" name="q" class="search-input" placeholder="Looking for something?">
+                <button type="submit"></button>
+            </div>
+        </div>
+    </section>
+    
+<div class="hero solid auto-height">
+    <section class="blog-list container">
+        <div class="row">
+            {{ range .Data.Pages.ByDate.Reverse }}
+            <div class="col-md-4">
+                <a href="{{- .URL | absURL -}}" title="" class="blog-post">
+                    <div class="blog-image" style="background-image: url('{{- .Params.Thumbnail -}}'); background-size:cover;">
+                    </div>
+                    <p class="title">{{- .Title -}}</p>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>
 
 {{ end }}

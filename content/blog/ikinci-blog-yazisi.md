@@ -1,13 +1,13 @@
 ---
-title:  "Smart Bundling: How To Serve Legacy Code Only To Legacy Browsers"
+title:  "İkinci Blog Yazısı"
 date: 2018-12-02T01:24:48+03:00
 tags: ["php", "mysql"]
-categories: ["Insights", "PHP"]
+categories: ["PHP", "Kategori"]
 thumbnail: "https://picsum.photos/270/270/?random=31"
 draft: false
-author: "Emir Karşıyakalı"
+author: "Mücahit Cücen"
 type: "blog"
-featured: primary
+featured: secondary
 ---
 
 _While effective bundling of resources on the web has received a great deal of mindshare in recent times, how we ship front-end resources to our users has remained pretty much the same. The average weight of JavaScript and style resources that a website ships with is rising — even though build tooling to optimize the website has never been better. With the marketshare of evergreen browsers rising fast and browsers launching support for new features in lockstep, is it time we rethink asset delivery for the modern web?_
