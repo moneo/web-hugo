@@ -2,9 +2,9 @@
 <section class="blog-top container-root">
     <div class="row p-0">
         <nav class="col-lg-8">
-                {{ if or (eq .Section "blog") (eq .Section "categories") }}
-                <a href="{{ "/blog/" | absURL }}">All</a>
+            {{ if or (eq .Section "blog") (eq .Section "categories") }}
   			        {{ $url := .URL }}
+                <a href="{{ "/blog/" | absURL }}" {{ if eq $url "/blog/" }}class="active"{{ end }}>All</a>
 
                 {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
                     <a href="/categories/{{ .Title | urlize }}/" {{ if eq $url .URL }}class="active"{{ end }}>{{ humanize .Title }}</a>

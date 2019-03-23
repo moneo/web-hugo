@@ -8,7 +8,7 @@ instagram = "https://instagram.com/moneo_official"
 linkedin = "https://linkedin.com/company/itsmoneo"
 youtube = "https://youtube.com"
 
-paginate = 1
+paginate = 9
 
 [taxonomies]
 category = "categories"
