@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jobs on Moneo</title>
-    <link>http://localhost:1313/jobs/</link>
+    <link>https://localhost:1313/jobs/</link>
     <description>Recent content in Jobs on Moneo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Dec 2018 01:52:13 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://localhost:1313/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Senior Php Developer</title>
-      <link>http://localhost:1313/jobs/senior-php-developer/</link>
+      <link>https://localhost:1313/jobs/senior-php-developer/</link>
       <pubDate>Sun, 02 Dec 2018 01:52:13 +0300</pubDate>
       
-      <guid>http://localhost:1313/jobs/senior-php-developer/</guid>
+      <guid>https://localhost:1313/jobs/senior-php-developer/</guid>
       <description> Çok Acil </description>
     </item>
     

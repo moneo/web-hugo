@@ -10,7 +10,7 @@
         <ul class="event-list owl-carousel">
             {{ range last 2 (where .Site.Pages "Params.type" "event") }}
             <li>
-                <a href="{{- .URL | absURL -}}">
+                <a href="{{ if eq true .Params.Remote }} {{ .Params.Redirect }} {{ else}} {{- .URL | absURL -}} {{ end }}" {{ if eq true .Params.Remote }} target="_blank" {{ end }}>
                     <p class="date">{{ dateFormat "2" .Params.Event_date}}<span>{{ dateFormat "Jan" .Params.Event_date}}</span></p>
                     <p class="title">{{- .Title -}}</p>
                     <p class="location">at&nbsp;{{- .Params.Location -}}</p>

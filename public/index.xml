@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Moneo</title>
-    <link>http://localhost:1313/</link>
+    <link>https://localhost:1313/</link>
     <description>Recent content on Moneo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Dec 2018 15:13:36 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>What We Do</title>
-      <link>http://localhost:1313/what-we-do/</link>
+      <link>https://localhost:1313/what-we-do/</link>
       <pubDate>Sun, 02 Dec 2018 15:13:36 +0300</pubDate>
       
-      <guid>http://localhost:1313/what-we-do/</guid>
+      <guid>https://localhost:1313/what-we-do/</guid>
       <description> what we do </description>
     </item>
     
     <item>
       <title>About Us</title>
-      <link>http://localhost:1313/about-us/</link>
+      <link>https://localhost:1313/about-us/</link>
       <pubDate>Sun, 02 Dec 2018 15:04:45 +0300</pubDate>
       
-      <guid>http://localhost:1313/about-us/</guid>
+      <guid>https://localhost:1313/about-us/</guid>
       <description> About us </description>
     </item>
     
     <item>
       <title>Our Expertise</title>
-      <link>http://localhost:1313/our-expertise/</link>
+      <link>https://localhost:1313/our-expertise/</link>
       <pubDate>Sun, 02 Dec 2018 14:59:56 +0300</pubDate>
       
-      <guid>http://localhost:1313/our-expertise/</guid>
+      <guid>https://localhost:1313/our-expertise/</guid>
       <description> baslik </description>
     </item>
     
     <item>
       <title>Senior Php Developer</title>
-      <link>http://localhost:1313/jobs/senior-php-developer/</link>
+      <link>https://localhost:1313/jobs/senior-php-developer/</link>
       <pubDate>Sun, 02 Dec 2018 01:52:13 +0300</pubDate>
       
-      <guid>http://localhost:1313/jobs/senior-php-developer/</guid>
+      <guid>https://localhost:1313/jobs/senior-php-developer/</guid>
       <description> Çok Acil </description>
     </item>
     
     <item>
       <title>Career</title>
-      <link>http://localhost:1313/career/</link>
+      <link>https://localhost:1313/career/</link>
       <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
       
-      <guid>http://localhost:1313/career/</guid>
+      <guid>https://localhost:1313/career/</guid>
       <description>Career    Anything else want to talk career@itsmoneo.com    We Believe Our Team OUR CULTURE Nearly a decade ago, we came up with an idea of setting up a great team with a goal of building awesome digital products for startups and companies. Like every other company out there, we started as a small business but dedicated ourselves to product details.
 We Love Scalable Architecture, Solid Development, Test-Driven Development, Restful API</description>
     </item>
     
     <item>
       <title>Company</title>
-      <link>http://localhost:1313/company/</link>
+      <link>https://localhost:1313/company/</link>
       <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
       
-      <guid>http://localhost:1313/company/</guid>
+      <guid>https://localhost:1313/company/</guid>
       <description>We are moneo We build ambitious products that engage your users and help you to achieve your business objectives.
  Our Story Nearly a decade ago, we came up with an idea of setting up a great team with a goal of building awesome digital products for startups and companies. Like every other company out there, we started as a small business but dedicated ourselves to product details, as well as the happiness of individuals; we maintained them chemistry and thus get bigger.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://localhost:1313/contact/</link>
       <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
       
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://localhost:1313/contact/</guid>
       <description> Contact us Mail Us Talk anything that you want
 hello@moneo.com
 career@moneo.com  Our Office Drink a coffee?
@@ -84,10 +84,10 @@ No:5 34394 Şişli / İstanbul Show on Map   Phone Let&#39;s talk
     
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/services/</link>
+      <link>https://localhost:1313/services/</link>
       <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
       
-      <guid>http://localhost:1313/services/</guid>
+      <guid>https://localhost:1313/services/</guid>
       <description>Services           Back-End
 Development About Service Nearly a decade ago, we came up with an idea of setting up a great team with a goal of building awesome digital products for startups and companies. Like every other company out there, we started as a small business but dedicated ourselves to product details.
 We Love Scalable Architecture, Solid Development, Test-Driven Development, Restful API</description>
@@ -95,10 +95,10 @@ We Love Scalable Architecture, Solid Development, Test-Driven Development, Restf
     
     <item>
       <title>Technologies</title>
-      <link>http://localhost:1313/technologies/</link>
+      <link>https://localhost:1313/technologies/</link>
       <pubDate>Sun, 02 Dec 2018 01:47:46 +0300</pubDate>
       
-      <guid>http://localhost:1313/technologies/</guid>
+      <guid>https://localhost:1313/technologies/</guid>
       <description>Technologies  Modern Architectural Approaches We use modern architectural patterns, such as MVP and MVVM, to create mighty and scalable applications with clean, maintainable, and testable code.
 JavaScript TypeScript HTML5 CSS3 Angular React    Modern Infrastructure Approaches We use modern architectural patterns, such as MVP and MVVM, to create mighty and scalable applications with clean, maintainable, and testable code.
 HTML5 CSS3 Angular React    Modern Backend Architectural Approaches We use modern architectural patterns, such as MVP and MVVM, to create mighty and scalable applications with clean, maintainable, and testable code.</description>
@@ -106,28 +106,37 @@ HTML5 CSS3 Angular React    Modern Backend Architectural Approaches We use moder
     
     <item>
       <title>IstanbulPHP Geri Donus</title>
-      <link>http://localhost:1313/events/istanbulphp-geri-donus/</link>
+      <link>https://localhost:1313/events/istanbulphp-geri-donus/</link>
       <pubDate>Sun, 02 Dec 2018 01:31:13 +0300</pubDate>
       
-      <guid>http://localhost:1313/events/istanbulphp-geri-donus/</guid>
+      <guid>https://localhost:1313/events/istanbulphp-geri-donus/</guid>
+      <description> İstanbulPHP Geri Dönüş Evet geri döndük&amp;hellip; &amp;lt;?php class Muco extends Mesut interface Cucen { } function test(){ return rand(0,1) % 2; }  </description>
+    </item>
+    
+    <item>
+      <title>IstanbulPHP Geri Donus 2</title>
+      <link>https://localhost:1313/events/istanbulphp-geri-donus-2/</link>
+      <pubDate>Sun, 02 Dec 2018 01:31:13 +0300</pubDate>
+      
+      <guid>https://localhost:1313/events/istanbulphp-geri-donus-2/</guid>
       <description> İstanbulPHP Geri Dönüş Evet geri döndük&amp;hellip; &amp;lt;?php class Muco extends Mesut interface Cucen { } function test(){ return rand(0,1) % 2; }  </description>
     </item>
     
     <item>
       <title>Smart Bundling: How To Serve Legacy Code Only To Legacy Browsers</title>
-      <link>http://localhost:1313/blog/ilk-blog-yazisi/</link>
+      <link>https://localhost:1313/blog/ilk-blog-yazisi/</link>
       <pubDate>Sun, 02 Dec 2018 01:24:48 +0300</pubDate>
       
-      <guid>http://localhost:1313/blog/ilk-blog-yazisi/</guid>
+      <guid>https://localhost:1313/blog/ilk-blog-yazisi/</guid>
       <description>While effective bundling of resources on the web has received a great deal of mindshare in recent times, how we ship front-end resources to our users has remained pretty much the same. The average weight of JavaScript and style resources that a website ships with is rising — even though build tooling to optimize the website has never been better. With the marketshare of evergreen browsers rising fast and browsers launching support for new features in lockstep, is it time we rethink asset delivery for the modern web?</description>
     </item>
     
     <item>
       <title>İkinci Blog Yazısı</title>
-      <link>http://localhost:1313/blog/ikinci-blog-yazisi/</link>
+      <link>https://localhost:1313/blog/ikinci-blog-yazisi/</link>
       <pubDate>Sun, 02 Dec 2018 01:24:48 +0300</pubDate>
       
-      <guid>http://localhost:1313/blog/ikinci-blog-yazisi/</guid>
+      <guid>https://localhost:1313/blog/ikinci-blog-yazisi/</guid>
       <description>While effective bundling of resources on the web has received a great deal of mindshare in recent times, how we ship front-end resources to our users has remained pretty much the same. The average weight of JavaScript and style resources that a website ships with is rising — even though build tooling to optimize the website has never been better. With the marketshare of evergreen browsers rising fast and browsers launching support for new features in lockstep, is it time we rethink asset delivery for the modern web?</description>
     </item>
     

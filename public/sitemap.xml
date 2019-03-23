@@ -3,131 +3,136 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/what-we-do/</loc>
+    <loc>https://localhost:1313/what-we-do/</loc>
     <lastmod>2018-12-02T15:13:36+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about-us/</loc>
+    <loc>https://localhost:1313/about-us/</loc>
     <lastmod>2018-12-02T15:04:45+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/our-expertise/</loc>
+    <loc>https://localhost:1313/our-expertise/</loc>
     <lastmod>2018-12-02T14:59:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/jobs/senior-php-developer/</loc>
+    <loc>https://localhost:1313/jobs/senior-php-developer/</loc>
     <lastmod>2018-12-02T01:52:13+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/career/</loc>
+    <loc>https://localhost:1313/career/</loc>
     <lastmod>2018-12-02T01:47:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/company/</loc>
+    <loc>https://localhost:1313/company/</loc>
     <lastmod>2018-12-02T01:47:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://localhost:1313/contact/</loc>
     <lastmod>2018-12-02T01:47:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/services/</loc>
+    <loc>https://localhost:1313/services/</loc>
     <lastmod>2018-12-02T01:47:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/technologies/</loc>
+    <loc>https://localhost:1313/technologies/</loc>
     <lastmod>2018-12-02T01:47:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/events/istanbulphp-geri-donus/</loc>
+    <loc>https://localhost:1313/events/istanbulphp-geri-donus/</loc>
     <lastmod>2018-12-02T01:31:13+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/ilk-blog-yazisi/</loc>
+    <loc>https://localhost:1313/events/istanbulphp-geri-donus-2/</loc>
+    <lastmod>2018-12-02T01:31:13+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://localhost:1313/blog/ilk-blog-yazisi/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/ikinci-blog-yazisi/</loc>
+    <loc>https://localhost:1313/blog/ikinci-blog-yazisi/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://localhost:1313/blog/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://localhost:1313/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>https://localhost:1313/events/</loc>
     <lastmod>2018-12-02T01:31:13+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/insights/</loc>
+    <loc>https://localhost:1313/categories/insights/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/jobs/</loc>
+    <loc>https://localhost:1313/jobs/</loc>
     <lastmod>2018-12-02T01:52:13+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/kategori/</loc>
+    <loc>https://localhost:1313/categories/kategori/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://localhost:1313/</loc>
     <lastmod>2018-12-02T15:13:36+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/mysql/</loc>
+    <loc>https://localhost:1313/tags/mysql/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/php/</loc>
+    <loc>https://localhost:1313/categories/php/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/php/</loc>
+    <loc>https://localhost:1313/tags/php/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://localhost:1313/search/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://localhost:1313/tags/</loc>
     <lastmod>2018-12-02T01:24:48+03:00</lastmod>
     <priority>0</priority>
   </url>
