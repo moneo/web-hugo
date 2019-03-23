@@ -5,7 +5,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Events</a></li>
             {{ range $key, $category := .Params.categories }}
-            <li><a href="{{ "/" | absURL }}events/{{ $category | urlize }}/">{{ humanize $category }}</a></li>
+            <li><a href="{{ "/" | absURL }}events/{{ $category | urlize }}/" >{{ humanize $category }}</a></li>
             {{ end }}
             <li><a href="{{- .URL | absURL -}}">{{ .LinkTitle }}</a></li>
         </ul>

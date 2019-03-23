@@ -4,8 +4,10 @@
         <nav class="col-lg-8">
                 {{ if or (eq .Section "blog") (eq .Section "categories") }}
                 <a href="{{ "/blog/" | absURL }}">All</a>
+  			        {{ $url := .URL }}
+
                 {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-                    <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
+                    <a href="/categories/{{ .Title | urlize }}/" {{ if eq $url .URL }}class="active"{{ end }}>{{ humanize .Title }}</a>
                 {{ end }}
             {{ end }}
         </nav>
