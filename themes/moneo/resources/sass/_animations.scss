@@ -1,0 +1,38 @@
+@import "mixins";
+@import "variables";
+
+@keyframes blink-blue {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: color(primary);
+  }
+}
+
+$move: 3px;
+
+@keyframes horizontalMove {
+  from, to {
+    margin-right: 0px;
+  }
+  50% {
+    margin-right: $move;
+    margin-left: $move;
+  }
+}
+
+@keyframes verticalMove {
+  from, to {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: $move;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../component";
+
+section.team{
+  @include make-container();
+  @include make-container-max-widths();
+  @include make-container-root();
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &>h1{
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+
+    @include media-breakpoint-down(md){
+      font-size: 3.8rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  &>p{
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+  }
+
+  .grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    text-align: left;
+    margin: 80px 0 0 0;
+
+    article{
+      text-align: center;
+      cursor: default;
+
+      h1{
+        font: {
+          family: $font-medium;
+          size: 1.8rem;
+        }
+        line-height: 2.3rem;
+        margin: 20px 0 10px 0;
+      }
+
+      p{
+        font-size: 1.6rem;
+        color: color(regular-2);
+        margin: 0;
+      }
+    }
+  }
+}

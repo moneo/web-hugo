@@ -1,0 +1,28 @@
+$font-regular:  'GT Walsheim Pro', Arial, sans-serif;
+$font-bold:     'GT Walsheim Pro Bold', "Arial Black", sans-serif;
+$font-medium:   'GT Walsheim Pro Medium', Arial, sans-serif;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+$colors: (
+  primary:      #3399D4,
+  regular-1:    #16232B,
+  regular-2:    #8D95A1,
+  background-1: #0F1F28,
+  background-2: #F2F5FA,
+  border-1:     #EAEFF7,
+  gray:         #f5f5f5,
+  white:        #fff,
+  black:        #000
+);
+
+$icons: (
+  magnifier : '\e900',
+  caret : '\e901',
+);
+

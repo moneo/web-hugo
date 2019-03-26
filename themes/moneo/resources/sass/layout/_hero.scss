@@ -1,0 +1,360 @@
+@import "../component";
+
+.hero{
+  position: relative;
+  margin: 0 0 80px 0;
+  height: 900px;
+
+  @include media-breakpoint-down(md){
+    height: 400px;
+  }
+
+  article{
+    @include make-container();
+    @include make-container-max-widths();
+    @include make-container-root();
+    padding-top: 17.2vh;
+
+    @media (max-width: 1280px) {
+      padding-top: 11vh;
+    }
+
+    @include media-breakpoint-down(md){
+      padding-top: 30px;
+    }
+
+    h1{
+      font-size: 8rem;
+      line-height: 9.4rem;
+      margin: 0 0 40px;
+      width: 55%;
+
+      &::after{
+        content: '|';
+        font-weight: 100;
+        font-family: sans-serif;
+        color: color(primary);
+        animation: 1.5s blink-blue step-end infinite;
+      }
+
+      @include media-breakpoint-down(md){
+        font-size: 4rem;
+        line-height: 5.4rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    p{
+      width: 470px;
+      font-size: 2.2rem;
+      line-height: 3.8rem;
+      margin: 0 0 40px 0;
+
+      @include media-breakpoint-down(md){
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &>img{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+    @include media-breakpoint-down(md){
+      width: 90%;
+      opacity: 0.3;
+    }
+  }
+
+  .dots{
+    @include make-container();
+    @include make-container-max-widths();
+    @include make-container-root();
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+
+    @include media-breakpoint-down(md){
+      overflow: hidden;
+    }
+
+    .dot{
+      position: absolute;
+
+      &.yellow{
+        &.size-1{
+          top: 170px;
+          left: 850px;
+        }
+        &.size-3{
+          top: 253px;
+          left: 133px;
+        }
+      }
+      &.green{
+        &.size-1{
+          top: 548px;
+          left: 202px;
+        }
+        &.size-2{
+          top: 450px;
+          right: 84px;
+
+          @include media-breakpoint-down(md){
+            top: 50px;
+            right: 14px;
+          }
+        }
+        &.size-3{
+          top: 195px;
+          right: 62px;
+        }
+      }
+      &.blue{
+        &.size-1{
+          top: 459px;
+          left: -84px;
+
+          @include media-breakpoint-down(md){
+            top: 47px;
+            left: 227px;
+          }
+        }
+        &.size-2{
+          top: 142px;
+          left: 436px;
+
+          &.pos-2{
+            bottom: -39px;
+            right: 315px;
+          }
+        }
+        &.size-3{
+          top: 437px;
+          left: 627px;
+
+          @include media-breakpoint-down(md){
+            top: 137px;
+            left: 27px;
+          }
+        }
+      }
+    }
+  }
+
+
+  &.full-background,
+  &.solid{
+    h1{
+      font-size: 8rem;
+      line-height: 9.4rem;
+
+      @include media-breakpoint-down(md){
+        font-size: 4rem;
+        line-height: 5.4rem;
+      }
+    }
+  }
+
+  &.full-background{
+    height: 800px;
+    margin: 0;
+    padding: 337px 0 0 0;
+    text-align: center;
+    color: color(white);
+    background: no-repeat 100% 100%/cover color(background-1);
+    cursor: default;
+
+    &.small-height {
+      height: 600px;
+      padding-top: 299px;
+    }
+
+    @include media-breakpoint-down(md){
+      height: 480px;
+      padding-top: 180px;
+    }
+
+    &>p{
+      display: block;
+      margin: 0 auto;
+      font-size: 2.2rem;
+      line-height: 3.8rem;
+      max-width: 570px;
+
+      @include media-breakpoint-down(md){
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+
+  &.solid{
+    position: relative;
+    height: 600px;
+    margin: 0;
+    text-align: center;
+    background: color(background-2);
+    cursor: default;
+
+    &.career-solid {
+      height: 420px;
+    }
+
+    @include media-breakpoint-down(md){
+      height: 420px;
+
+      &.career-solid {
+        height: 420px;
+      }
+    }
+
+    @include media-breakpoint-down(sm){
+      height: 280px;
+
+      &.career-solid {
+        height: 280px;
+      }
+    }
+
+    h1{
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin: 0 auto;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.auto-height {
+    height: auto;
+  }
+
+  & > .container-sm {
+    max-width: 970px;
+    padding-top: 260px;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(md){
+      padding: 160px 15px 0 15px;
+    }
+  }
+
+  & > .career {
+    padding-top: 260px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-breakpoint-down(md){
+      @include make-container-max-widths();
+      padding-top: 120px;
+    }
+
+    h1 {
+      position: relative;
+      margin: 0;
+      transform: translateY(0%);
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding-top: 10px;
+
+      & > i {
+        margin-right: 20px;
+      }
+
+      a {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #3399d4;
+        text-decoration: underline;
+
+        &:after, &:before {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  & > .contact {
+    min-height: 900px;
+    text-align: left;
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(md){
+      text-align: center;
+    }
+
+    h1 {
+      position: relative;
+      margin: 0 0 60px 0;
+      transform: translateY(0%);
+      font-size: 5.2rem;
+    }
+
+    & > .block {
+      color: #16232b;
+      font-size: 16px;
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      p {
+        color: #8d95a1;
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+        font-weight: normal;
+        text-decoration: underline;
+        color: #3399d4;
+        margin-top: 5px;
+
+        &:after, &:before {
+          display: none;
+        }
+
+        &.tel {
+          color: #16232b;
+          margin: 0;
+          text-decoration: none;
+        }
+      }
+    }
+
+    p.brief {
+      font-size: 22px;
+      line-height: 1.73;
+      color: #16232b;
+      margin-bottom: 60px;
+    }
+
+    hr.divider {
+      margin: 50px 0 100px 0;
+      color: #dadde4 !important;
+      border: none;
+      border-top: 1px solid;
+    }
+  }
+}

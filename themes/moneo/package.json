@@ -1,0 +1,40 @@
+{
+  "name": "moneo",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moneo/web-hugo.git"
+  },
+  "author": "moneo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moneo/web-hugo/issues"
+  },
+  "homepage": "https://github.com/moneo/web-hugo#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "dev": "gulp serve",
+    "postinstall": "gulp post-install",
+    "algolia": "atomic-algolia"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "merge-stream": "^1.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "atomic-algolia": "^0.3.17"
+  }
+}

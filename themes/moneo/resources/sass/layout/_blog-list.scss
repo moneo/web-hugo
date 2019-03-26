@@ -1,0 +1,53 @@
+@import "../component";
+
+section.blog-list {
+  padding: 100px 0;
+
+  @include media-breakpoint-down(sm){
+    padding: 60px 15px;
+  }
+
+  a.blog-post {
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 30px;
+
+    &:after, &:before {
+      display: none;
+    }
+
+    & > .blog-image {
+      height: 200px;
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+
+    & > p.title {
+      display: block;
+      white-space: normal;
+      overflow: hidden;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px 20px 0 20px;
+      margin: 0;
+      height: 66px;
+      line-height: 23px;
+    }
+
+    & > p.meta {
+      padding: 20px;
+      font-size: 14px;
+      color: #8d95a1;
+
+      & > .author {
+        padding-left: 10px;
+
+        strong {
+          color: #16232b;
+        }
+      }
+    }
+  }
+}

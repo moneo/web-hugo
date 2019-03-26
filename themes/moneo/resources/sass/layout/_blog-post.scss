@@ -1,0 +1,190 @@
+@import "../component";
+
+section.blog-breadcrumbs {
+  border: none;
+
+  nav.breadcrumb {
+    max-width: 770px;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(md){
+      @include make-container-max-widths();
+    }
+
+    ul li {
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 20px;
+        height: 20px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTguNjI5IDE1Ljk5N2wtNy4wODMtNy4wODFMMTMuNDYyIDdsOC45OTcgOC45OTdMMTMuNDU3IDI1bC0xLjkxNi0xLjkxNnoiLz48L3N2Zz4=');;
+        background-size: 20px;
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+
+      a {
+        font-size: 16px;
+
+        &:after, &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+article.blog-post {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
+
+  @include media-breakpoint-down(md){
+    @include make-container-max-widths();
+    padding: 0 15px 100px 15px;
+  }
+
+  & > h1 {
+    font-size: 44px;
+    line-height: normal;
+  }
+
+  & > .info {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 30px 0;
+    font-size: 16px;
+    color: #8d95a1;
+
+    & > p.meta {
+      span.author {
+        margin-left: 20px;
+
+        strong {
+          color: #16232b;
+        }
+      }
+    }
+
+    div.share {
+      display: flex;
+      margin-left: 20px;
+
+      nav.share {
+        margin-left: 10px;
+        ul li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  img.hero {
+    max-width: 140%;
+    margin: 0 0 40px -20%;
+    max-height: 500px;
+
+    @include media-breakpoint-down(md){
+      max-width: 90%;
+      margin: 0 5% 40px 5%;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: FreightTextProBold;
+    margin-bottom: 30px;
+  }
+
+  & > p {
+    font-family: FreightTextProBook;
+    font-size: 24px;
+    line-height: 1.58;
+    margin-bottom: 30px;
+
+    &.quote {
+      font-style: italic;
+      border-bottom: 2px solid #c8cdd6;
+      padding-bottom: 30px;
+      margin-bottom: 25px;
+    }
+  }
+
+  figure {
+    text-align: center;
+    margin-top: 60px;
+
+    img {
+      max-width: 100%;
+    }
+
+    figcaption {
+      font-family: FreightTextPro;
+      font-size: 20px;
+      font-style: italic;
+      color: #8d95a1;
+      margin: 30px 0 60px 0;
+    }
+  }
+}
+
+section.blog-post-bottom {
+  & > .comments {
+    max-width: 770px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    text-align: left;
+
+    @include media-breakpoint-down(sm){
+      @include make-container();
+      @include make-container-max-widths();
+      @include make-container-root();
+      padding: 0 15px 100px 15px;
+    }
+
+    & > h1 {
+      position: relative;
+      font-size: 52px;
+      height: 68px;
+      margin-bottom: 10px;
+    }
+
+    & > .list {
+      article {
+        background-color: #fff;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+
+        h4 {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          width: 100%;
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 0;
+        }
+
+        p.meta {
+          line-height: 1.43;
+          font-size: 14px;
+          color: #8d95a1;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

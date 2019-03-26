@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="66px" viewBox="0 0 48 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C---01-Services---01-Services" transform="translate(-197.000000, -3415.000000)">
+            <g id="Content" transform="translate(0.000000, 2766.000000)">
+                <g id="Managed-Service" transform="translate(155.000000, 616.000000)">
+                    <g id="Group-3" transform="translate(30.000000, 30.000000)">
+                        <rect id="bound" x="0" y="0" width="72" height="72"></rect>
+                        <path d="M24,9 L24,10.5 C24,12.9852814 26.0147186,15 28.5,15 L43.5,15 C45.9852814,15 48,12.9852814 48,10.5 L48,9 L58,9 C59.1045695,9 60,9.8954305 60,11 L60,67 C60,68.1045695 59.1045695,69 58,69 L14,69 C12.8954305,69 12,68.1045695 12,67 L12,11 C12,9.8954305 12.8954305,9 14,9 L24,9 Z" id="Combined-Shape" fill="#3399D4" opacity="0.3"></path>
+                        <path d="M33,6 C33,4.34314575 34.3431458,3 36,3 C37.6568542,3 39,4.34314575 39,6 L44.5,6 C44.7761424,6 45,6.22385763 45,6.5 L45,11.5 C45,11.7761424 44.7761424,12 44.5,12 L27.5,12 C27.2238576,12 27,11.7761424 27,11.5 L27,6.5 C27,6.22385763 27.2238576,6 27.5,6 L33,6 Z" id="Combined-Shape" fill="#3399D4"></path>
+                        <rect id="Rectangle-152" fill="#3399D4" x="30" y="27" width="21" height="6" rx="2"></rect>
+                        <rect id="Rectangle-152-Copy-2" fill="#3399D4" x="21" y="27" width="6" height="6" rx="2"></rect>
+                        <rect id="Rectangle-152-Copy-3" fill="#3399D4" x="21" y="39" width="6" height="6" rx="2"></rect>
+                        <rect id="Rectangle-152-Copy" fill="#3399D4" x="30" y="39" width="21" height="6" rx="2"></rect>
+                        <rect id="Rectangle-152-Copy-5" fill="#3399D4" x="21" y="51" width="6" height="6" rx="2"></rect>
+                        <rect id="Rectangle-152-Copy-4" fill="#3399D4" x="30" y="51" width="21" height="6" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

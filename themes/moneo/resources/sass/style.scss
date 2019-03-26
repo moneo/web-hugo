@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "icons";
+@import "animations";
+@import "bootstrap";
+
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
+
+*:focus{
+  outline: none;
+}
+
+*::selection{
+  background: color(primary);
+  color: color(white);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-regular;
+  font-size: 1.8rem;
+  color: color(regular-1);
+}
+
+a{
+  position: relative;
+  cursor: pointer;
+  color: color(regular-1);
+
+  .icon-caret{
+    display: inline-block;
+    font-size: 0.65em;
+    @include transition(transform 0.3s ease);
+  }
+
+  &:hover{
+    color: color(regular-1);
+    text-decoration: none;
+
+    .icon-caret{
+      transform: translate(3px, 0);
+    }
+  }
+
+  &:not(.btn){
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+      background: color(primary);
+      opacity: 0;
+
+      @include transition(all 0.3s ease-in-out);
+    }
+
+    &:before {
+      left: calc(50%);
+    }
+    &:after {
+      right: calc(50%);
+    }
+
+    &.active{
+      @include transition(none);
+    }
+
+    &.active::before,
+    &.active::after,
+    &:hover::before,
+    &:hover::after{
+      opacity: 1;
+      width: 50%;
+    }
+  }
+}
+
+h1 {
+  font-family: $font-bold;
+  line-height: 1;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+.container-root{
+  @include make-container();
+  @include make-container-max-widths();
+  @include make-container-root();
+
+  &.content{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@import "layout/all";

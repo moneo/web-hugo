@@ -1,0 +1,39 @@
+@import "variables";
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+%icon-base {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon($key, $position: "before") {
+  &:#{$position} {
+    @extend %icon-base;
+    content: map-get($icons, $key);
+  }
+}
+
+@mixin make-container-root(){
+  @include media-breakpoint-up(md){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin disable-link-animation(){
+  &::before,
+  &::after{
+    display: none;
+  }
+}

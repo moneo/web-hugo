@@ -1,0 +1,83 @@
+{{ define "main" }}
+<section class="hero" id="home">
+    <article>
+        <h1 class="slogan"></h1>
+        <p class="slogan-desc"></p>
+        <a href="/services.html" class="btn">Our Services</a>
+    </article>
+    <img src="/assets/image/hero/we-build-web.svg" alt="">
+</section>
+
+<section class="services">
+    <article>
+        <h1>Flawless services for <br/>excellent products!</h1>
+        <p>We offer you the expertise you’ve been looking for to build stable, scalable and, advanced products. No compromises, only promises that are held.</p>
+        <ul>
+            <li class="svg-service-web">Web Development</li>
+            <li class="svg-service-mobile">Mobile Development</li>
+            <li class="svg-service-cloud">Cloud Services</li>
+            <li class="svg-service-business">Business Analysis</li>
+            <li class="svg-service-project">Project Management</li>
+            <li class="svg-service-product">Product Design</li>
+            <li class="svg-service-quality">Quality Assurance</li>
+            <li class="svg-service-maintenance">Maintenance Services</li>
+        </ul>
+        <a class="btn" href="/services.html">Our Services</a>
+    </article>
+</section>
+
+<section class="featured-projects">
+    <h1>Worked hard. Got results.</h1>
+    <nav class="project-card">
+        <a>
+            <img src="/assets/image/project/marketplace.jpg" alt="">
+            <h1>Marketplace</h1>
+        </a>
+        <a>
+            <img src="/assets/image/project/tracking.jpg" alt="">
+            <h1>Tracking System</h1>
+        </a>
+        <a>
+            <img src="/assets/image/project/payment.jpg" alt="">
+            <h1>Payment System</h1>
+        </a>
+    </nav>
+</section>
+
+<section class="clients">
+    <h1>Happy Clients</h1>
+    <section class="grid">
+        <img src="/assets/image/client/ibb.png" alt="">
+        <img src="/assets/image/client/kitapyurdu.png" alt="">
+        <img src="/assets/image/client/dugun.png" alt="">
+        <img src="/assets/image/client/lilakutu.svg" alt="" style="width:120px">
+        <img src="/assets/image/client/yeniben.png" alt="" style="width:120px;padding-bottom:10px">
+        <img src="/assets/image/client/palex.png" alt="" style="padding-top:15px">
+    </section>
+</section>
+
+<!-- <section class="latest-blog">
+    <h1>Read Our Blog</h1>
+    <section class="nav-container">
+        <nav>
+            <section class="featured">
+                {{ range last 1 (where .Pages "Params.featured" "primary") }}
+                    <a href="{{- .URL | absURL -}}">
+                        <p class="title">{{- .Title -}}</p>
+                        <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
+                    </a>
+                {{ end }}
+            </section>
+            <section class="secondary">
+                {{ range last 2 (where .Pages "Params.featured" "secondary") }}
+                <a href="{{- .URL | absURL -}}">
+                    <p class="title">{{- .Title -}}</p>
+                    <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{- .Params.Author -}}</strong></span></p>
+                </a>
+                {{ end }}
+            </section>
+        </nav>
+        <a href="{{ .Site.BaseURL }}blog/" class="read-more">Read more articles on our blog <i class="icon-caret"></i></a>
+    </section>
+</section> -->
+{{ end }}

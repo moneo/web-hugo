@@ -1,0 +1,15 @@
+@import "../component";
+
+a.mobile-nav-btn {
+
+  &:after, &:before {
+    display: none;
+  }
+
+  &:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url(../icon/service-cloud.svg);
+  }
+}

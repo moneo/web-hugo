@@ -1,0 +1,48 @@
+@import "../component";
+
+.dots{
+  .dot{
+    display: block;
+    opacity: 0;
+    transform: translateZ(0);
+    transition: opacity 0.3s ease, .1s ease-out, transform 0.2s ease-in-out;
+    animation-name: horizontalMove;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+
+    &:nth-child(even) {
+      animation-name: verticalMove;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    &.size-1{
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+    }
+    &.size-2{
+      width: 14px;
+      height: 14px;
+      border-radius: 14px;
+    }
+    &.size-3{
+      width: 22px;
+      height: 22px;
+      border-radius: 22px;
+    }
+    &.yellow{
+      background-color: #F2BF46;
+    }
+    &.green{
+      background-color: #67DA99;
+    }
+    &.blue{
+      background-color: #3399D4;
+    }
+
+    &:hover{
+      transform: scale(3);
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "name": "moneo",
+    "lastOpened": 1418773394855,
+    "created": 1541504462800
+  },
+  "iconSets": [
+    {
+      "selection": [
+        {
+          "order": 130,
+          "id": 1,
+          "name": "magnifier",
+          "prevSize": 32,
+          "code": 59648,
+          "tempChar": ""
+        },
+        {
+          "order": 131,
+          "id": 2,
+          "name": "caret",
+          "prevSize": 32,
+          "tempChar": "",
+          "code": 59649
+        }
+      ],
+      "id": 1,
+      "metadata": {
+        "name": "mono",
+        "importSize": {
+          "width": 5,
+          "height": 10
+        }
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [
+        {
+          "id": 1,
+          "paths": [
+            "M914.879 1005.023c24.991 25.303 65.386 25.303 90.377 0s24.991-66.236 0-91.538l-197.212-197.101c55.775-74.754 88.795-167.486 88.795-267.929 0-247.675-200.764-448.455-448.419-448.455s-448.42 200.78-448.42 448.455c0 247.675 200.764 448.455 448.42 448.455 100.813 0 193.857-33.271 268.751-89.433l197.708 197.546zM128.12 448.455c0-176.91 143.404-320.325 320.3-320.325s320.3 143.414 320.3 320.325c0 176.91-143.403 320.325-320.3 320.325s-320.3-143.414-320.3-320.325z"
+          ],
+          "attrs": [],
+          "grid": 0,
+          "tags": [
+            "magnifier"
+          ]
+        },
+        {
+          "id": 2,
+          "paths": [
+            "M0 0l512 512-512 512v-1024z"
+          ],
+          "attrs": [],
+          "width": 512,
+          "grid": 0,
+          "tags": [
+            "caret"
+          ],
+          "defaultCode": 59648
+        }
+      ],
+      "invisible": false,
+      "colorThemes": []
+    }
+  ],
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "resetPoint": 59648
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  },
+  "uid": -1
+}

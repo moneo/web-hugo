@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C---01-Services---01-Services" transform="translate(-791.000000, -3050.000000)">
+            <g id="Content" transform="translate(0.000000, 2766.000000)">
+                <g id="Managed-Product" transform="translate(755.000000, 248.000000)">
+                    <g id="Icon" transform="translate(30.000000, 30.000000)">
+                        <rect id="bound" x="0" y="0" width="72" height="72"></rect>
+                        <circle id="Oval-5" fill="#3399D4" opacity="0.3" cx="36" cy="36" r="30"></circle>
+                        <path d="M34.4208204,57.1583592 L47.4572949,31.0854102 C47.6425368,30.7149263 47.4923686,30.2644215 47.1218847,30.0791796 C47.0177431,30.0271088 46.9029083,30 46.7864745,30 L36,30 L36,15.177051 C36,14.7628374 35.6642136,14.427051 35.25,14.427051 C34.965921,14.427051 34.7062236,14.5875528 34.5791796,14.8416408 L21.5427051,40.9145898 C21.3574632,41.2850737 21.5076314,41.7355785 21.8781153,41.9208204 C21.9822569,41.9728912 22.0970917,42 22.2135255,42 L33,42 L33,56.822949 C33,57.2371626 33.3357864,57.572949 33.75,57.572949 C34.034079,57.572949 34.2937764,57.4124472 34.4208204,57.1583592 Z" id="Path-3" fill="#3399D4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

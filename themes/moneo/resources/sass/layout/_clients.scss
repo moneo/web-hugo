@@ -1,0 +1,42 @@
+@import "../component";
+
+section.clients{
+  padding: 80px 0 100px;
+  @include make-container();
+  @include make-container-max-widths();
+  @include make-container-root();
+
+  &>h1{
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  section.grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+
+    @include media-breakpoint-down(sm){
+      grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    }
+
+    img {
+      width: 140px;
+      filter: grayscale(100%);
+      transition: .2s ease-out;
+
+      @include media-breakpoint-down(xs){
+        width: 120px;
+      }
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

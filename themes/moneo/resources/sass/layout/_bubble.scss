@@ -1,0 +1,158 @@
+@import "../component";
+
+article.bubble {
+  @include make-container();
+  @include make-container-max-widths();
+  @include make-container-root();
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  @include media-breakpoint-down(sm){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: 270px;
+    height: 270px;
+    top: 190px;
+    left: 100px;
+
+    @include media-breakpoint-down(md){
+      transform: scale(0.7);
+      left: -20px;
+    }
+
+    @include media-breakpoint-down(sm){
+      display: none;
+    }
+  }
+
+  > * {
+    padding: 0 0 0 500px;
+
+    @include media-breakpoint-down(md){
+      padding-left: 260px;
+    }
+
+    @include media-breakpoint-down(sm){
+      padding-left: 0;
+    }
+  }
+
+  h1 {
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+    margin: 0;
+
+    @include media-breakpoint-down(md){
+      font-size: 3.8rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+
+    @include media-breakpoint-down(md){
+      display: none;
+    }
+
+    .dot{
+      position: absolute;
+      padding: 0;
+      opacity: 1;
+
+      &.yellow{
+        &.size-1{
+          top: 100px;
+          right: 510px;
+        }
+        &.size-2{
+          top: 500px;
+          right: 100px;
+        }
+        &.size-3{
+          top: 270px;
+          left: -60px;
+        }
+      }
+      &.green{
+        &.size-1{
+          top: 494px;
+          left: 351px;
+        }
+        &.size-2{
+          top: 120px;
+          left: 177px;
+        }
+        &.size-3{
+          top: 182px;
+          right: 190px;
+        }
+      }
+      &.blue{
+        &.size-2{
+          top: 30px;
+          right: 315px;
+        }
+        &.size-3{
+          top: 129px;
+          left: 390px;
+        }
+      }
+    }
+  }
+
+  & > strong {
+    display: block;
+    font: 1.4rem/1.8rem $font-bold;
+    color: color(regular-2);
+    margin: 40px 0 20px 0;
+    text-transform: uppercase;
+  }
+
+  & > p {
+    font-size: 2.2rem;
+    line-height: 3.8rem;
+  }
+
+  &.right{
+    &:before {
+      left: auto;
+      right: 100px;
+
+      @include media-breakpoint-down(md){
+        right: -20px;
+      }
+    }
+
+    > * {
+      padding: 0 500px 0 0;
+
+      @include media-breakpoint-down(md){
+        padding-right: 260px;
+      }
+
+      @include media-breakpoint-down(sm){
+        padding-right: 0;
+      }
+    }
+  }
+
+  & + article.bubble{
+    margin-top: -140px;
+
+    @include media-breakpoint-down(sm){
+      margin-top: -60px;
+    }
+  }
+}

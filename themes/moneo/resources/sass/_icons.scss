@@ -1,0 +1,192 @@
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../font/icomoon.eot?y6wbep');
+  src:
+    url('../font/icomoon.eot?y6wbep#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?y6wbep') format('truetype'),
+    url('../font/icomoon.woff?y6wbep') format('woff'),
+    url('../font/icomoon.svg?y6wbep#icomoon') format('svg')
+  ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  @extend %icon-base;
+}
+
+@each $icon, $code in $icons {
+  .icon-#{$icon}:before {
+    content: $code;
+  }
+}
+
+[class^="svg-"]:before,
+[class*=" svg-"]:before{
+  display: inline-block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  speak: none;
+  line-height: 1;
+  background: no-repeat center center;
+}
+
+.svg-contact:before {
+  width: 34px;
+  height: 30px;
+  background-image: url(../icon/contact.svg);
+}
+
+.svg-service-business:before {
+  background-image: url(../icon/service-business.svg);
+}
+
+.svg-service-cloud:before {
+  background-image: url(../icon/service-cloud.svg);
+}
+
+.svg-service-maintenance:before {
+  background-image: url(../icon/service-maintenance.svg);
+}
+
+.svg-service-mobile:before {
+  background-image: url(../icon/service-mobile.svg);
+}
+
+.svg-service-product:before {
+  background-image: url(../icon/service-product.svg);
+}
+
+.svg-service-project:before {
+  background-image: url(../icon/service-project.svg);
+}
+
+.svg-service-quality:before {
+  background-image: url(../icon/service-quality.svg);
+}
+
+.svg-service-web:before {
+  background-image: url(../icon/service-web.svg);
+}
+
+.svg-promo-what-we-do:before {
+  background-image: url(../icon/promo-what-we-do.svg);
+}
+
+.svg-promo-how-we-do-it:before {
+  background-image: url(../icon/promo-how-we-do-it.svg);
+}
+
+.svg-promo-our-works:before {
+  background-image: url(../icon/promo-our-works.svg);
+}
+
+.svg-bubble-backend:before {
+  background-image: url(../icon/bubble-backend.svg);
+}
+
+.svg-bubble-frontend:before {
+  background-image: url(../icon/bubble-frontend.svg);
+}
+
+.svg-bubble-devops:before {
+  background-image: url(../icon/bubble-devops.svg);
+}
+
+.svg-engagement-contact:before {
+  width: 60px;
+  height: 60px;
+  background-image: url(../icon/engagement-contact.svg);
+}
+
+.svg-engagement-product:before {
+  width: 60px;
+  height: 60px;
+  background-image: url(../icon/engagement-product.svg);
+}
+
+.svg-engagement-service:before {
+  width: 48px;
+  height: 66px;
+  background-image: url(../icon/engagement-service.svg);
+}
+
+.svg-engagement-team:before {
+  width: 72px;
+  height: 54px;
+  background-image: url(../icon/engagement-team.svg);
+}
+
+.svg-niche-event:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-event.svg);
+}
+
+.svg-niche-fintech:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-fintech.svg);
+}
+
+.svg-niche-fitness:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-fitness.svg);
+}
+
+.svg-niche-health:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-health.svg);
+}
+
+.svg-niche-logistics:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-logistics.svg);
+}
+
+.svg-niche-marketplace:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-marketplace.svg);
+}
+
+.svg-niche-ondemand:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-ondemand.svg);
+}
+
+.svg-niche-travel:before {
+  width: 66px;
+  height: 66px;
+  background-image: url(../icon/niche-travel.svg);
+}
+
+.icon-facebook {
+  background: url(../icon/facebook.svg) no-repeat;
+}
+
+.icon-twitter {
+  background: url(../icon/twitter.svg) no-repeat;
+}
+
+.icon-linkedin {
+  background: url(../icon/linkedin.svg) no-repeat;
+}
+
+.icon-instagram {
+  background: url(../icon/instagram.svg) no-repeat;
+}
+
+.icon-youtube {
+  background: url(../icon/youtube.svg) no-repeat;
+}

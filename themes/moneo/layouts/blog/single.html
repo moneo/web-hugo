@@ -1,0 +1,79 @@
+{{ define "main" }}
+<section class="blog-top blog-breadcrumbs">
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="{{ "/" | absURL }}">Home</a></li>
+            <li><a href="{{ "/blog/" | absURL }}">Blog</a></li>
+            {{ range $key, $category := .Params.categories }}
+            <li><a href="{{ "/categories/" | absURL }}{{ $category | urlize }}/">{{ $category }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</section>
+
+<article class="blog-post">
+    <h1>{{- .Title -}}</h1>
+
+    <div class="info">
+        <p class="meta d-flex">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{ .Params.Author }}</strong></span></p>
+        <div class="share">
+            <span>Share via</span>
+            <nav class="share">
+                <ul>
+                    <li><a href="javascript:;">Fb</a></li>
+                    <li><a href="javascript:;">Tw</a></li>
+                    <li><a href="javascript:;">In</a></li>
+                    <li><a href="javascript:;">Mail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <img src="/image/blog/hero.jpg" class="hero" alt="">
+    {{- .Content -}}
+</article>
+
+<section class="blog-post-bottom hero solid auto-height">
+    <section class="blog-list container">
+        <div class="row">
+          {{ $related := .Site.RegularPages.Related . | first 3 }}
+
+          {{ with $related }}
+          	{{ range . }}
+          	   <div class="col-md-4">
+                   <a href="{{- .URL | absURL -}}" title="" class="blog-post">
+                       <div class="blog-image" style="background-image: url('{{ .Params.thumbnail }}'); background-size:cover;">
+                       </div>
+                       <p class="title">{{ .Params.Title }}</p>
+                       <p class="meta">{{- .ReadingTime -}}&nbsp;min to read <span class="author">by <strong>{{ .Params.Author }}</strong></span></p>
+                   </a>
+               </div>
+          	{{ end }}
+          {{ end }}
+        </div>
+    </section>
+    <section class="comments">
+        <h1>Comments</h1>
+        <div id="disqus_thread"></div>
+        <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://itsmoneo.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+</section>
+{{ end }}

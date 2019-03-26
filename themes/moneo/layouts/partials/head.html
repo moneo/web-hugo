@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Moneo | {{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta type="description" content="{{ .Description }}">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta property="og:title" content="{{ .Params.og.title }}">
+    <meta property="og:site_name" content="Moneo">
+    <meta property="og:url" content="{{ .URL | absURL }}">
+    <meta property="og:description" content="{{ .Params.og.description }}">
+    <meta property="og:type" content="{{ .Params.og.type }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.og.image }}">
+</head>

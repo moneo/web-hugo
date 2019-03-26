@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D---01-Technologies---01-Tech" transform="translate(-259.000000, -1202.000000)" stroke="#3399D4" stroke-width="2">
+            <g id="Technologies" transform="translate(0.000000, 700.000000)">
+                <g id="Tab-1" transform="translate(155.000000, 474.000000)">
+                    <g id="Icon" transform="translate(105.000000, 29.000000)">
+                        <path d="M33.2328387,43.9996 L4.38251613,43.9996 C1.96122581,43.9996 0.000580645161,41.9716 0.000580645161,39.4716 L0.000580645161,4.5296 C0.000580645161,2.0276 1.96122581,-0.0004 4.38251613,-0.0004 L53.6812258,-0.0004 C56.1025161,-0.0004 58.0650968,2.0276 58.0650968,4.5296 L58.0650968,18.3476" id="Stroke-1"></path>
+                        <path d="M-0.000193548387,35.9996 L32.8875484,35.9996" id="Stroke-3"></path>
+                        <path d="M21.2779355,51.9996 L21.2779355,43.9996" id="Stroke-5"></path>
+                        <path d="M15.4836774,51.9996 L32.8972258,51.9996" id="Stroke-7" stroke-linecap="round"></path>
+                        <path d="M53.684129,58.0112 L43.0931613,58.0112 C40.6738065,58.0112 38.7112258,55.9832 38.7112258,53.4812 L38.7112258,30.5412 C38.7112258,28.0392 40.6738065,26.0112 43.0931613,26.0112 L53.684129,26.0112 C56.1034839,26.0112 58.0660645,28.0392 58.0660645,30.5412 L58.0660645,53.4812 C58.0660645,55.9832 56.1034839,58.0112 53.684129,58.0112 Z" id="Stroke-9"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

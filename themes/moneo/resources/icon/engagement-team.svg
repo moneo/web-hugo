@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="54px" viewBox="0 0 72 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C---01-Services---01-Services" transform="translate(-185.000000, -3053.000000)">
+            <g id="Content" transform="translate(0.000000, 2766.000000)">
+                <g id="Extended-Team" transform="translate(155.000000, 248.000000)">
+                    <g id="Group-2" transform="translate(30.000000, 30.000000)">
+                        <polygon id="Shape" points="0 0 72 0 72 72 0 72"></polygon>
+                        <path d="M54,42 C49.0294373,42 45,37.9705627 45,33 C45,28.0294373 49.0294373,24 54,24 C58.9705627,24 63,28.0294373 63,33 C63,37.9705627 58.9705627,42 54,42 Z M27,33 C20.372583,33 15,27.627417 15,21 C15,14.372583 20.372583,9 27,9 C33.627417,9 39,14.372583 39,21 C39,27.627417 33.627417,33 27,33 Z" id="Combined-Shape" fill="#3399D4" fill-rule="nonzero" opacity="0.3"></path>
+                        <path d="M52.8035883,45.0018523 C63.0231129,45.1135602 71.3675248,50.2804254 71.9954811,61.2 C72.0207738,61.6398167 71.9954811,63 70.3678498,63 L58.8,63 C58.8,56.2471961 56.5688806,50.0154981 52.8035883,45.0018523 Z M0.00195505287,60.5976166 C1.16477557,46.2795476 12.785737,39 26.950024,39 C41.3136492,39 53.1146511,45.8795786 53.993743,60.6 C54.0287637,61.1864223 53.993743,63 51.7400998,63 C40.6233719,63 24.1041742,63 2.18250668,63 C1.43013646,63 -0.0613852514,61.3775399 0.00195505287,60.5976166 Z" id="Combined-Shape" fill="#3399D4" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

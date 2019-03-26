@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="blog-top container-root">
+    <div class="row p-0">
+        <nav class="col-lg-8">
+                {{ if or (eq .Section "blog") (eq .Section "categories") }}
+                <a href="{{ "/blog/" | absURL }}">All</a>
+                {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                    <a href="/categories/{{ .Title | urlize }}/">{{ humanize .Title }}</a>
+                {{ end }}
+            {{ end }}
+        </nav>
+        {{- partial "search.html" . -}}
+    </div>
+</section>
+
+<div class="hero solid auto-height">
+    <section class="blog-list container">
+        <div class="row algolia-search-list">
+
+        </div>
+
+        <a class="prev-page" href="" style="float:left; display:none;">Prev Page</a>
+
+        <a class="next-page" href="" style="float:right; display:none;">Next Page</a>
+    </section>
+</div>
+{{ end }}
