@@ -207,8 +207,11 @@ jQuery(document).ready(function($){
   });
 
   if ( $('#centered-promo')[0] ) {
-      document.getElementById("centered-promo").scrollIntoView();
-      $('.promo').find('.boxes').css({ 'padding-right': '40px' });
+      var myElement = document.getElementById('centered-promo');
+      var topPos = myElement.offsetTop;
+      document.getElementById('promo-boxes').scrollLeft = topPos - 15;
+    //   document.getElementById("centered-promo").scrollIntoView();
+    //   $('.promo').find('.boxes').css({ 'padding-right': '40px' });
   }
 
   var dataText = [
