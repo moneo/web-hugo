@@ -1,5 +1,7 @@
-## Updating Algolia indexes
-  * npm install
-  * npm run algolia -> (Algolia'daki indexleri günceller.)
+## Compile statics
+  * cd themes/moneo
+  * npm i
+  * gulp build
 
-  
+## Run
+  * hugo
