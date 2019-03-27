@@ -37,12 +37,23 @@ section.promo{
     @include make-container();
     @include make-container-max-widths();
     @include make-container-root();
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 420px;
+    padding: 0;
 
-    @include media-breakpoint-down(md){
-      justify-content: left;
-      overflow: scroll;
+    .boxes-inner {
+        position: absolute;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: calc(100% + 15px);
+        box-sizing: content-box;
+
+        @include media-breakpoint-down(md){
+          justify-content: left;
+        }
     }
 
     article{
@@ -67,8 +78,8 @@ section.promo{
 
       @include media-breakpoint-down(sm){
         width: 100%;
-        flex: 0 0 90%;
-        margin: 0 0 0 20px;
+        flex: 0 0 85%;
+        margin: 0 0 0 15px;
 
         p {
             font-size: 1.7rem !important;

@@ -208,10 +208,14 @@ jQuery(document).ready(function($){
 
   if ( $('#centered-promo')[0] ) {
       var myElement = document.getElementById('centered-promo');
-      var topPos = myElement.offsetTop;
-      document.getElementById('promo-boxes').scrollLeft = topPos - 15;
-    //   document.getElementById("centered-promo").scrollIntoView();
-    //   $('.promo').find('.boxes').css({ 'padding-right': '40px' });
+      var topPos = myElement.offsetLeft;
+      document.getElementById('promo-boxes').scrollLeft = topPos - 30;
+  }
+
+  if ( $('#centered-project')[0] ) {
+      var myElement = document.getElementById('centered-project');
+      var topPos = myElement.offsetLeft;
+      document.getElementById('project-cards').scrollLeft = topPos - 33;
   }
 
   var dataText = [
