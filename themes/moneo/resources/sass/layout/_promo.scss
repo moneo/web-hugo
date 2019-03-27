@@ -2,7 +2,7 @@
 
 section.promo{
   position: relative;
-  padding: 100px 0;
+  padding: 100px 15px;
   text-align: center;
   background: color(background-2);
 
@@ -37,12 +37,24 @@ section.promo{
     @include make-container();
     @include make-container-max-widths();
     @include make-container-root();
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 420px;
+    padding: 0;
 
-    @include media-breakpoint-down(md){
-      justify-content: left;
-      overflow: scroll;
+    .boxes-inner {
+        position: absolute;
+        overflow-x: scroll;
+        display: flex;
+        justify-content: center;
+        width: 96%;
+        height: calc(100% + 15px);
+        box-sizing: content-box;
+
+        @include media-breakpoint-down(md){
+          width: 100%;
+          justify-content: left;
+        }
     }
 
     article{
@@ -67,13 +79,19 @@ section.promo{
 
       @include media-breakpoint-down(sm){
         width: 100%;
-        flex: 0 0 100%;
+        flex: 0 0 85%;
+        margin: 0 0 0 15px;
+
+        p {
+            font-size: 1.7rem !important;
+            line-height: 2.4rem !important;
+        }
       }
 
       &:before{
         width: 72px;
         height: 72px;
-        margin: 0 0 40px 0;
+        margin: 0 0 20px 0;
       }
 
       &:first-child{

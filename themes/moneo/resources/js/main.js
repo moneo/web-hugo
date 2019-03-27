@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
   var $window = $(window);
+  var $windowSize = $(window).width();
   var $body = $('body');
   var $header = $('header');
   var $document = $(document);
@@ -195,12 +196,41 @@ jQuery(document).ready(function($){
     $(this).toggleClass('opened-nav-button');
   });
 
-  // When on mobile submenu clicks will be toggle nav's open state
-  $('nav.mobile-nav .has-submenu', $header).click(function(){
-    if($window.width() < 970){
-      $(this).toggleClass('open');
-    }
+  $(document).on('click touchstart', '.mobile-link a', function(e){
+      e.preventDefault();
+      window.location.href = $(this).attr('href');
   });
+
+  // When on mobile submenu clicks will be toggle nav's open state
+  // $('nav.mobile-nav .has-submenu', $header).click(function(){
+  //   if($window.width() < 970){
+  //     $(this).toggleClass('open');
+  //   }
+  // });
+
+  if ( $('#centered-promo')[0] ) {
+      var myElement = document.getElementById('centered-promo');
+      var topPos = myElement.offsetLeft;
+      document.getElementById('promo-boxes').scrollLeft = topPos - 30;
+  }
+
+  if ( $('#centered-project')[0] ) {
+      var myElement = document.getElementById('centered-project');
+      var topPos = myElement.offsetLeft;
+      document.getElementById('project-cards').scrollLeft = topPos - 33;
+  }
+
+  var eventCounter = $('.event-list').find('li').length;
+  var navNext = $('.list-navigation .next');
+  if ( $windowSize < 768 ) {
+      if ( eventCounter < 2 ) {
+          navNext.addClass('disabled');
+      }
+  } else {
+      if ( eventCounter < 3 ) {
+          navNext.addClass('disabled');
+      }
+  }
 
   var dataText = [
     "We build for everyone.",

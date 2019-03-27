@@ -65,8 +65,10 @@
     min-height: 200px;
 
     article{
-      position: absolute;
-      visibility: hidden;
+    //   position: absolute;
+    //   visibility: hidden;
+      width: 100%;
+      display: none;
       opacity: 0;
       @include transition(opacity 1.8s ease);
 
@@ -76,7 +78,8 @@
       }
 
       &.active{
-        visibility: visible;
+        // visibility: visible;
+        display: inline-block;
         opacity: 1;
       }
     }

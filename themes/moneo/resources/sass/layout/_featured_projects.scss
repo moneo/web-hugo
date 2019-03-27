@@ -15,17 +15,28 @@ section.featured-projects{
   }
 
   .project-card {
-    display: flex;
-    justify-content: center;
-    padding: 80px 0;
     border-bottom: 1px solid color(background-2);
+    overflow: hidden;
+    position: relative;
+    min-height: 340px;
 
     @include media-breakpoint-down(md){
-      padding-top: 40px;
-      padding-left: 15px;
-      padding-right: 15px;
-      justify-content: left;
-      overflow: scroll;
+
+    }
+
+    .project-card-inside {
+        display: flex;
+        justify-content: center;
+        padding: 80px 0;
+
+        @include media-breakpoint-down(md){
+          position: absolute;
+          padding-top: 40px;
+          padding-left: 15px;
+          padding-right: 15px;
+          justify-content: left;
+          overflow: scroll;
+        }
     }
 
     a{
@@ -41,7 +52,8 @@ section.featured-projects{
 
       @include media-breakpoint-down(sm){
         width: 100%;
-        flex: 0 0 100%;
+        flex: 0 0 90%;
+        margin: 0 0 0 20px;
       }
 
       h1{
@@ -49,9 +61,9 @@ section.featured-projects{
       }
 
       img{
-        width: 100%;
         height: auto;
         max-width: 100%;
+        max-height: auto;
       }
 
       p{
