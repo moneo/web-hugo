@@ -195,12 +195,19 @@ jQuery(document).ready(function($){
     $(this).toggleClass('opened-nav-button');
   });
 
+  $('.mobile-link a').click(function(){
+    window.location.href = $(this).attr('href');
+  });
+
   // When on mobile submenu clicks will be toggle nav's open state
   $('nav.mobile-nav .has-submenu', $header).click(function(){
     if($window.width() < 970){
       $(this).toggleClass('open');
     }
   });
+
+  document.getElementById("centered-promo").scrollIntoView();
+  $('.promo').find('.boxes').css({ 'padding-right': '40px' });
 
   var dataText = [
     "We build for everyone.",
