@@ -1,5 +1,6 @@
 jQuery(document).ready(function($){
   var $window = $(window);
+  var $windowSize = $(window).width();
   var $body = $('body');
   var $header = $('header');
   var $document = $(document);
@@ -216,6 +217,18 @@ jQuery(document).ready(function($){
       var myElement = document.getElementById('centered-project');
       var topPos = myElement.offsetLeft;
       document.getElementById('project-cards').scrollLeft = topPos - 33;
+  }
+
+  var eventCounter = $('.event-list').find('li').length;
+  var navNext = $('.list-navigation .next');
+  if ( $windowSize < 768 ) {
+      if ( eventCounter < 2 ) {
+          navNext.addClass('disabled');
+      }
+  } else {
+      if ( eventCounter < 3 ) {
+          navNext.addClass('disabled');
+      }
   }
 
   var dataText = [
