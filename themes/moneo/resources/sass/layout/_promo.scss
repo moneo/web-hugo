@@ -47,11 +47,12 @@ section.promo{
         overflow-x: scroll;
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 96%;
         height: calc(100% + 15px);
         box-sizing: content-box;
 
         @include media-breakpoint-down(md){
+          width: 100%;
           justify-content: left;
         }
     }

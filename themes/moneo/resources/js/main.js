@@ -196,16 +196,17 @@ jQuery(document).ready(function($){
     $(this).toggleClass('opened-nav-button');
   });
 
-  $('.mobile-link a').click(function(){
-    window.location.href = $(this).attr('href');
+  $(document).on('click touchstart', '.mobile-link a', function(e){
+      e.preventDefault();
+      window.location.href = $(this).attr('href');
   });
 
   // When on mobile submenu clicks will be toggle nav's open state
-  $('nav.mobile-nav .has-submenu', $header).click(function(){
-    if($window.width() < 970){
-      $(this).toggleClass('open');
-    }
-  });
+  // $('nav.mobile-nav .has-submenu', $header).click(function(){
+  //   if($window.width() < 970){
+  //     $(this).toggleClass('open');
+  //   }
+  // });
 
   if ( $('#centered-promo')[0] ) {
       var myElement = document.getElementById('centered-promo');
