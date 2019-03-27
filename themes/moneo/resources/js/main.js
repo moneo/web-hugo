@@ -206,8 +206,10 @@ jQuery(document).ready(function($){
     }
   });
 
-  document.getElementById("centered-promo").scrollIntoView();
-  $('.promo').find('.boxes').css({ 'padding-right': '40px' });
+  if ( $('#centered-promo')[0] ) {
+      document.getElementById("centered-promo").scrollIntoView();
+      $('.promo').find('.boxes').css({ 'padding-right': '40px' });
+  }
 
   var dataText = [
     "We build for everyone.",
